@@ -1,1 +1,0 @@
-# Script de la parte 2 
