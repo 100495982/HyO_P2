@@ -60,6 +60,7 @@ def no_tres_consecutivos(v1, v2, v3) -> bool:
     s = v1 + v2 + v3
     return s != 0 and s != 3
 
+
 # RESTRICCION 2: TIENE QUE HABER EXACTAMENTE N/2 DE CADA TIPO DE CARACTER (0/1)
 def misma_cantidad_colores(*args):
     """
