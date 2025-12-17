@@ -1,21 +1,15 @@
-cmake_minimum_required(VERSION 3.23)
-project(parte2_astar CXX)
+cmake_minimum_required(VERSION 3.16)
+project(parte2 CXX)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -march=native -Wall -Wextra")
 
-add_executable(preprocess
-    src/preprocess.cpp
-)
+# Encontrar archivos fuente automáticamente
+file(GLOB SOURCES "*.cpp")
+file(GLOB HEADERS "*.hpp")
 
-add_executable(astar_run
-    src/astar_main.cpp
-)
+add_executable(parte2 ${SOURCES} ${HEADERS})
 
-target_include_directories(preprocess PRIVATE include)
-target_include_directories(astar_run PRIVATE include)
-
-if (NOT MSVC)
-  target_compile_options(preprocess PRIVATE -O3 -Wall -Wextra)
-  target_compile_options(astar_run PRIVATE -O3 -Wall -Wextra)
-endif()
+# Hacer parte-2.py ejecutable
+configure_file(parte-2.py parte-2.py COPYONLY)

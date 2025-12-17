@@ -35,8 +35,8 @@ public:
         VertexID start,
         VertexID goal);
 
-    // Brute force (Dijkstra) for comparison
-    SolucionAStar solveDijkstra(
+    // BFS (Breadth-First Search) for comparison
+    SolucionAStar solveBFS(
         const Grafo& g,
         VertexID start,
         VertexID goal);
