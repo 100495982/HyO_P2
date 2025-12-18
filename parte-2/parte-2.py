@@ -69,7 +69,7 @@ def main() -> int:
     print(f"# arcos   : {n_arcos}")
     print(f"Solución óptima encontrada con coste {coste}")
     print("")
-    print(f"Tiempo de ejecución: {float(tiempo):.2f} segundos")
+    print(f"Tiempo de ejecución: {float(tiempo):.6f} segundos")
     exp_i = int(exp)
     t = float(tiempo)
 

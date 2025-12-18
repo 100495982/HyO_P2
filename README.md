@@ -33,7 +33,7 @@ Esta carpeta contiene la solución de la **Parte 2**: encontrar el camino más c
 Desde el directorio `parte-2`:
 cmake -S . -B build
 cmake --build build -j
-
+cp ./build/parte2 ./parte2
 
 Esto genera el binario en `build/parte2`.
 
