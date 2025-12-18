@@ -35,7 +35,11 @@ int main(int argc, char* argv[]) {
     grafo.loadGraph(gr_path, co_path);
 
     Algoritmo algoritmo;
-    SolucionAStar resultado = algoritmo.solveAStar(grafo, start, goal);
+    //SolucionAStar resultado = algoritmo.solveAStar(grafo, start, goal);
+	//SolucionAStar resultado = algoritmo.solveDijkstra(grafo, start, goal); // optimal brute-force baseline
+	//SolucionAStar resultado = algoritmo.solveBFS(grafo, start, goal);    // non-optimal
+	//SolucionAStar resultado = algoritmo.solveDFS(grafo, start, goal);    // non-optimal
+
 
     // Write path to OUT_FILE in required format: v - cost - v - cost - ... - v [file:1]
     std::ofstream out(out_path);

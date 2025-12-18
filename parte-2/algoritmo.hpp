@@ -26,7 +26,13 @@ public:
     Algoritmo() = default;
 
     SolucionAStar solveAStar(const Grafo& g, VertexID start, VertexID goal);
+
+    // Non-optimal on weighted graphs (for comparison only)
     SolucionAStar solveBFS(const Grafo& g, VertexID start, VertexID goal);
+    SolucionAStar solveDFS(const Grafo& g, VertexID start, VertexID goal);
+
+    // Optimal brute-force baseline for weighted graphs
+    SolucionAStar solveDijkstra(const Grafo& g, VertexID start, VertexID goal);
 };
 
 #endif // ALGORITMO_HPP
