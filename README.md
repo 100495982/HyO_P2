@@ -15,6 +15,7 @@ han sido encontradas.
 valida (ambas delimitadas en tabla).
 
 # Parte 2 — Camino más corto (DIMACS)
+## NOTA: PARA ELEGIR EL ALGORITMO A UTILIZAR, DESCOMENTA SU RESPECTIVA LLAMADA/LINEA EN main.cpp ENTRE LAS LINEAS 38-41.
 
 Esta carpeta contiene la solución de la **Parte 2**: encontrar el camino más corto entre dos vértices en un mapa DIMACS (`.gr` + `.co`) ejecutando `parte-2.py`, que a su vez lanza el ejecutable C++ `./parte2`. [file:1]
 
@@ -69,9 +70,6 @@ Ejemplo:
 1 - (1498) - 308 - (8718) - 309
 
 
-## Notas rápidas
-- Si aparece `FileNotFoundError` al lanzar `parte2`, comprobar que existe `./parte2` en el mismo directorio que `parte-2.py` y tiene permisos de ejecución.
-- Si el tiempo mostrado por pantalla redondea a `0.00`, aumentar la precisión del formateo o probar un par de vértices más alejados (instancias más costosas).
 
 
 
